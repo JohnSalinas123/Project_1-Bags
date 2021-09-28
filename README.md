@@ -39,4 +39,4 @@ Link:
 
 ## v) Link to Javadoc's start page (index.html)
 
-Link to start page: 
+**Link to javadoc**:[javaDoc](/javaDoc/index.html)
