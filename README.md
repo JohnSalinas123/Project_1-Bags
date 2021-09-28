@@ -35,7 +35,7 @@ Screencast going over your code - (Daniel, John, Priscilla)
 
 ## iv) Link to screencast
 
-Link:
+**Link to screencast**:[screenCast](https://www.youtube.com/watch?v=rkhow1BeLwQ)
 
 ## v) Link to Javadoc's start page (index.html)
 
