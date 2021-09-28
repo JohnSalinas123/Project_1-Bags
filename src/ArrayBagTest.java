@@ -1,12 +1,11 @@
-//import java.util.Arrays;
+
 
 public class ArrayBagTest {
     public static void main(String[] args) {
         
         // Testing union method : Priscilla
-
-        /* 
-	BagInterface<String> bag1 = new ResizeableArrayBag<>();
+        System.out.println("Start of union method test code:\n");
+	    BagInterface<String> bag1 = new ResizeableArrayBag<>();
         BagInterface<String> bag2 = new ResizeableArrayBag<>();
       
               bag1.add("a");
@@ -16,49 +15,46 @@ public class ArrayBagTest {
               bag2.add("b");
               bag2.add("b");
               bag2.add("d");
-              bag2.add("f");
+              bag2.add("e");
 	      
-	BagInterface<String> everything = bag1.union(bag2) ;
+	    BagInterface<String> everything = bag1.union(bag2) ;
         displayBag(everything);
-	*/
+	
 
         // Testing intersection method : John
-
-        /*
-
+        System.out.println("\nStart of intersection method test code:\n");
+        // Create two array bags
         BagInterface<String> interBag1 = new ResizeableArrayBag<>();
         BagInterface<String> interBag2 = new ResizeableArrayBag<>();
 
-        
+        // Fill both bags with elements 
         interBag1.add("a");
         interBag1.add("b");
         interBag1.add("c");
-        interBag1.add("b");
-        interBag1.add("b");
 
         interBag2.add("b");
         interBag2.add("b");
         interBag2.add("d");
         interBag2.add("e");
-        interBag2.add("a");
 
-
+        // Display both filled bags
         displayBag(interBag1);
         displayBag(interBag2);
 
+        // Intersection of both bags
         BagInterface<String> commonItems = interBag1.intersection(interBag2);
 
+        // Checking if original bags are unaltered
         displayBag(interBag1);
         displayBag(interBag2);
         
+        // Display the result of union method
         displayBag(commonItems);
 
-        */
-
+        
 
         // Testing difference method : Daniel
-        
-        /*
+        System.out.println("\nStart of difference method test code:\n");
         BagInterface<String> diffBag1 = new ResizeableArrayBag<>();
         BagInterface<String> diffBag2 = new ResizeableArrayBag<>();
 
@@ -77,13 +73,12 @@ public class ArrayBagTest {
 
         displayBag(leftOver1);
 
-        System.out.println();
         displayBag(leftOver2);
 
         displayBag(diffBag1);
         displayBag(diffBag2);
 
-        */
+        
 
 
     }

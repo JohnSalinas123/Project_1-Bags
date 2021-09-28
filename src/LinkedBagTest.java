@@ -10,10 +10,8 @@ public class LinkedBagTest { // Question: LinkedBagTest will implement BagInterf
     public static void main(String[] args) {
 
         // Testing union method : Priscilla
-
-        /*
-
-        // creat two bags //
+        System.out.println("Start of union method test code: \n");
+        // create two bags //
         BagInterface<String> bag1 = new LinkedBag<>();
         BagInterface<String> bag2 = new LinkedBag<>();
         
@@ -31,38 +29,44 @@ public class LinkedBagTest { // Question: LinkedBagTest will implement BagInterf
         BagInterface<String> everything = bag1.union(bag2) ;
         displayBag(everything);
 
-        */
+        
 
         // Testing intersection method : John
+        System.out.println("\nStart of intersection method test code:\n");
+         // Create two linked bags
+         BagInterface<String> interBag1 = new LinkedBag<>();
+         BagInterface<String> interBag2 = new LinkedBag<>();
 
-        /*
+         // Fill both bags with elements
+         interBag1.add("a");
+         interBag1.add("b");
+         interBag1.add("c");
 
-        BagInterface<String> interBag1 = new LinkedBag<>();
-        BagInterface<String> interBag2 = new LinkedBag<>();
+         interBag2.add("b");
+         interBag2.add("b");
+         interBag2.add("d");
+         interBag2.add("e");
 
-        interBag1.add("a");
-        interBag1.add("b");
-        interBag1.add("c");
-        interBag1.add("b");
+         // Display both filled bags
+         displayBag(interBag1);
+         displayBag(interBag2);
 
-        interBag2.add("b");
-        interBag2.add("b");
-        interBag2.add("d");
-        interBag2.add("e");
+         // Intersection of both bags
+         BagInterface<String> commonItems = interBag1.intersection(interBag2);
 
-        displayBag(interBag1);
-        displayBag(interBag2);
+         // Check that both original bags are unalatered
+         displayBag(interBag1);
+         displayBag(interBag2);
+         
+         // Display results of intersection method
+         displayBag(commonItems);
 
-        BagInterface<String> commonItems = interBag1.intersection(interBag2);
-
-        displayBag(interBag1);
-        displayBag(interBag2);
         
-        displayBag(commonItems);
 
-        */
-
+        
         // Testing difference method : Daniel
+         System.out.println("\nStart of difference method test code:\n");
+
         BagInterface<String> diffBag1 = new LinkedBag<>();
         BagInterface<String> diffBag2 = new LinkedBag<>();
         
@@ -82,6 +86,8 @@ public class LinkedBagTest { // Question: LinkedBagTest will implement BagInterf
         BagInterface<String> leftOver2 = diffBag2.difference(diffBag1);
 
         displayBag(leftOver2);
+
+        
         
     }
 
