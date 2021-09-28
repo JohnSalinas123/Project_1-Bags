@@ -211,11 +211,10 @@ public class LinkedBag<T> implements BagInterface<T> {
      */
     @Override
     public BagInterface<T> intersection(BagInterface<T> otherBag) {
-
         BagInterface<T> result = new LinkedBag<T>();
 
         if (this.getCurrentSize() == 0 || otherBag.getCurrentSize() == 0) {
-            return null;
+            return result;
         }
 
         T[] leftLinked = this.toArray();
