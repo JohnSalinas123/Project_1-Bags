@@ -244,20 +244,14 @@ public class ResizeableArrayBag<T> implements BagInterface<T> {
     public BagInterface<T> intersection(BagInterface<T> otherBag) {
         BagInterface<T> result = new ResizeableArrayBag<>();
 
-        if (this.getCurrentSize() == 0 && otherBag.getCurrentSize() == 0) {
-            return null;
-        } else if (this.getCurrentSize() == 0) {
-            return otherBag;
-        } else if (otherBag.getCurrentSize() == 0) {
-            return this;
-        }
+        if (this.getCurrentSize() == 0 || otherBag.getCurrentSize() == 0) {
+            return result;
+        } 
         
-
         T[] leftArray = this.toArray();
         T[] rightArray = otherBag.toArray();
         
         T element;
-        //boolean found = false;
 
         for(int i = 0; i < leftArray.length; i++) {
             element = leftArray[i];
